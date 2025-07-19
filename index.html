@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home Court: King of the Beach Tournament</title>
-  <!-- Tailwind CSS via CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Home Court</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
   <!-- Hero -->
   <section class="py-12 bg-white shadow-md">
     <div class="max-w-5xl mx-auto px-4 text-center">
-      <!-- Top Images -->
-      <div class="flex justify-center items-center space-x-8 mb-8">
-  
-      <img
-        src="superspike.webp"
-        alt="Super Spike V'Ball"
-        class="w-48 sm:w-64 md:w-80 lg:w-96 xl:w-[600px] h-auto"
-      />
-        
+      <div class="flex justify-center mb-8">
+        <!-- local superspike image -->
+        <img
+          src="superspike.webp"
+          alt="Super Spike V'Ball"
+          class="w-96 h-auto"
+        />
       </div>
       <h1 class="text-4xl font-extrabold mb-2">Home Court Challenge</h1>
-      <p class="text-lg text-gray-600 mb-6">King of the Beach Tournament</p>
-      <a href="#register" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition">
+      <p class="text-lg text-gray-600 mb-6">Wondering where the best players in DFW Play? Find out in in this FIVB-Style King of the Court Tournament</p>
+      <a
+        href="mailto:wayne@rwysolutions.com?subject=Home%20Court%20Challenge%20Registration"
+        class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition"
+      >
         Register Your Team
       </a>
     </div>
@@ -33,27 +33,33 @@
   <!-- Main Content -->
   <main class="max-w-6xl mx-auto px-4 py-12 space-y-16">
 
-    <!-- Guarantees & Format -->
+    <!-- Rules & Details -->
     <div class="grid md:grid-cols-2 gap-8">
       <div class="flex items-start space-x-4">
         <span class="text-4xl">🏖️</span>
         <div>
           <h2 class="text-2xl font-bold mb-1">Venue</h2>
-          <p class="text-gray-600">Beach Bakyard: Dallas's premier beach volleyball destination with professional-grade courts.</p>
+          <p class="text-gray-600">
+            Beach Bakyard: Dallas's premier beach volleyball destination with professional-grade courts.
+          </p>
         </div>
       </div>
       <div class="flex items-start space-x-4">
         <span class="text-4xl">⚡</span>
         <div>
-          <h2 class="text-2xl font-bold mb-1">Guaranteed Action</h2>
-          <p class="text-gray-600">Every team plays at least 4 rounds. Maximum volleyball for your investment!</p>
+          <h2 class="text-2xl font-bold mb-1">Guaranteed at least 4 Rounds</h2>
+          <p class="text-gray-600">
+            Every team will have at least 4 FIVB King of the Court Rounds. Details on format can be found <a href="https://kingofthecourt.com/" class="text-blue-600 underline">here</a>.
+          </p>
         </div>
       </div>
       <div class="flex items-start space-x-4">
         <span class="text-4xl">💥</span>
         <div>
           <h2 class="text-2xl font-bold mb-1">Format</h2>
-          <p class="text-gray-600">European FIVB King of the Court: fast‑paced, high‑intensity 2v2 matches.</p>
+          <p class="text-gray-600">
+            5 teams per court · 3 rounds · 1 court · 1 King. Teams rotate in and out, aiming to score points while on the “king” side. Top teams advance based on points.
+          </p>
         </div>
       </div>
       <div>
@@ -61,7 +67,8 @@
         <ul class="list-disc list-inside text-gray-700 space-y-1">
           <li><strong>Entry Fee:</strong> $50 per team</li>
           <li><strong>Equipment:</strong> Official Wilson OPTX AVP volleyballs</li>
-          <li><strong>Format:</strong> King of the Court, 4 guaranteed rounds</li>
+          <li><strong>Game Play:</strong> 3 rounds of 15 minutes each</li>
+          <li><strong>Rules:</strong> Lowest scoring team eliminated after rounds 1 and 2. Final: First team to 15 points wins.</li>
           <li><strong>Prize:</strong> Trophies &amp; gift cards for top teams</li>
         </ul>
       </div>
@@ -71,37 +78,61 @@
     <section>
       <h2 class="text-3xl font-bold mb-8 text-center">Representing Home Courts</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        
+
         <!-- Beach Bakyard -->
         <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-          <img src="beach-bakyard.jpg" alt="Beach Bakyard" class="w-24 h-24 mb-4 object-cover rounded-full">
+          <img
+            src="https://static.wixstatic.com/media/1b0ede_b50458821bab42a3affd15a00f697d8f~mv2.jpg"
+            alt="Beach Bakyard Court"
+            class="w-32 h-20 mb-4 object-cover rounded-md"
+          />
           <h3 class="font-semibold text-xl mb-2">Beach Bakyard</h3>
-          <p class="text-gray-600 mb-4">Dallas's premier beach volleyball destination with multiple pro‑grade sand courts.</p>
-          <a href="https://beachbakyard.example.com" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
+          <p class="text-gray-600 mb-4">
+            Dallas's premier beach volleyball destination with multiple pro‑grade sand courts.
+          </p>
+          <a href="https://beachbakyard.com/" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
         </div>
 
         <!-- Sandy Pickle -->
         <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-          <img src="sandy-pickle.jpg" alt="Sandy Pickle" class="w-24 h-24 mb-4 object-cover rounded-full">
+          <img
+            src="https://playsandypickle.com/wp-content/uploads/2023/10/MicrosoftTeams-image-24-1024x464.png"
+            alt="Sandy Pickle Court"
+            class="w-32 h-20 mb-4 object-cover rounded-md"
+          />
           <h3 class="font-semibold text-xl mb-2">Sandy Pickle</h3>
-          <p class="text-gray-600 mb-4">Upscale dining + volleyball in The Village, Dallas.</p>
-          <a href="https://thevillagedallas.example.com" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
+          <p class="text-gray-600 mb-4">
+            Upscale dining + volleyball in The Village, Dallas.
+          </p>
+          <a href="https://playsandypickle.com/" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
         </div>
 
-        <!-- Mad Sand Volleyball -->
+        <!-- MadSand Volleyball -->
         <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-          <img src="mad-sand.jpg" alt="Mad Sand Volleyball" class="w-24 h-24 mb-4 object-cover rounded-full">
-          <h3 class="font-semibold text-xl mb-2">Mad Sand Volleyball</h3>
-          <p class="text-gray-600 mb-4">Elite training &amp; pro coaching to sharpen your skills.</p>
-          <a href="https://madsandvolleyball.example.com" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/5d6bb5c02a5c4f0001ee1b02/1665685573003-T65IW3LIZDSJSWKPWUVN/IMG_4363.JPG"
+            alt="MadSand Volleyball Court"
+            class="w-32 h-20 mb-4 object-cover rounded-md"
+          />
+          <h3 class="font-semibold text-xl mb-2">MadSand Volleyball</h3>
+          <p class="text-gray-600 mb-4">
+            Elite training &amp; pro coaching to sharpen your skills.
+          </p>
+          <a href="https://www.madsandvolleyball.com/" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
         </div>
 
         <!-- Sports Garden DFW -->
         <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-          <img src="sports-garden-dfw.jpg" alt="Sports Garden DFW" class="w-24 h-24 mb-4 object-cover rounded-full">
+          <img
+            src="https://www.sportsgardendfw.com/images/design/logo.webp"
+            alt="Sports Garden DFW Court"
+            class="w-32 h-20 mb-4 object-contain rounded-md"
+          />
           <h3 class="font-semibold text-xl mb-2">Sports Garden DFW</h3>
-          <p class="text-gray-600 mb-4">Multi‑sport complex with beach volleyball + family fun.</p>
-          <a href="https://sportsgardendfw.example.com" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
+          <p class="text-gray-600 mb-4">
+            Multi‑sport complex with beach volleyball + family fun.
+          </p>
+          <a href="https://www.sportsgardendfw.com/" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
         </div>
 
       </div>
@@ -109,11 +140,19 @@
 
   </main>
 
-  <!-- Call‑to‑Action Footer -->
-  <section id="register" class="bg-blue-600 text-white rounded-lg mx-4 my-12 py-12 px-6 text-center max-w-4xl mx-auto">
+  <!-- Call to Action -->
+  <section
+    id="register"
+    class="bg-blue-600 text-white rounded-lg mx-4 my-12 py-12 px-6 text-center max-w-4xl mx-auto"
+  >
     <h2 class="text-3xl font-bold mb-4">Ready to Compete?</h2>
-    <p class="text-lg mb-6">$50 per team · 4 rounds guaranteed · King of the Court format · Professional venue · Wilson OPTX volleyballs</p>
-    <a href="https://register.example.com" class="inline-block bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition">
+    <p class="text-lg mb-6">
+      $50 per team · Fast-paced rotation format · King of the Court rules · Pro sand courts · AVP balls
+    </p>
+    <a
+      href="mailto:wayne@rwysolutions.com?subject=Home%20Court%20Challenge%20Registration"
+      class="inline-block bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition"
+    >
       Register Now
     </a>
   </section>
