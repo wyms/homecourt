@@ -1,94 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home Court: King of the Beach Tournament</title>
-  <link rel="stylesheet" href="styles.css">
+  <!-- Tailwind CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content container">
-      <!-- Top images: Super Spike V'Ball game & Wilson OPTX ball -->
-      <div class="hero-images">
-        <img src="superspike.png" alt="Super Spike V'Ball retro game cover" class="hero-image">
-        <img src="wilson-optx.png" alt="Wilson OPTX AVP volleyball" class="hero-image">
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Hero -->
+  <section class="py-12 bg-white shadow-md">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <!-- Top Images -->
+      <div class="flex justify-center items-center space-x-8 mb-8">
+        <img src="superspike.png" alt="Super Spike V'Ball" class="w-32 h-auto">
+        <img src="wilson-optx.png" alt="Wilson OPTX AVP Volleyball" class="w-32 h-auto">
       </div>
-      <h1>Home Court: King of the Beach Tournament</h1>
-      <p class="subtitle">Elite 2v2 Beach Volleyball Competition in Dallas</p>
-      <a href="#register" class="btn btn-primary">Register Your Team</a>
-    </div>
-  </header>
-
-  <!-- Highlights -->
-  <section class="highlights container">
-    <div class="highlight">
-      <h2>🏖️ Venue</h2>
-      <p>Beach Bakyard: Dallas's premier beach volleyball destination with professional-grade courts.</p>
-    </div>
-    <div class="highlight">
-      <h2>⚡ Guaranteed Action</h2>
-      <p>Every team plays at least 4 rounds. Maximum volleyball for your investment!</p>
-    </div>
-    <div class="highlight">
-      <h2>💥 Format</h2>
-      <p>European FIVB King of the Court style: fast-paced, high-intensity 2v2 matches.</p>
+      <h1 class="text-4xl font-extrabold mb-2">Home Court: King of the Beach Tournament</h1>
+      <p class="text-lg text-gray-600 mb-6">Elite 2v2 Beach Volleyball Competition in Dallas</p>
+      <a href="#register" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition">
+        Register Your Team
+      </a>
     </div>
   </section>
 
-  <!-- Tournament Info -->
-  <section id="details" class="details container">
-    <h2>Event Details</h2>
-    <ul>
-      <li><strong>Entry Fee:</strong> $50 per team</li>
-      <li><strong>Equipment:</strong> Official Wilson OPTX AVP volleyballs</li>
-      <li><strong>Format:</strong> King of the Court, 4 guaranteed rounds</li>
-      <li><strong>Prize:</strong> Trophies and gift cards for top teams</li>
-    </ul>
-  </section>
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-4 py-12 space-y-16">
 
-  <!-- Venues -->
-  <section id="venues" class="venues container">
-    <h2>Representing Home Courts</h2>
-    <div class="venue-grid">
-      <!-- Venue Card -->
-      <article class="venue-card">
-        <h3>Beach Bakyard <span class="label">Host Venue</span></h3>
-        <p>Professional-grade sand courts and a vibrant community atmosphere.</p>
-        <a href="https://beachbakyard.com" class="btn btn-secondary">Visit Site</a>
-      </article>
-
-      <article class="venue-card">
-        <h3>Sandy Pickle</h3>
-        <p>Upscale dining and volleyball experience in The Village Dallas.</p>
-        <a href="https://sandypickle.com" class="btn btn-secondary">Visit Site</a>
-      </article>
-
-      <article class="venue-card">
-        <h3>Mad Sand Volleyball</h3>
-        <p>Elite training facility with professional coaching and competitive programs.</p>
-        <a href="https://madsandvolleyball.com" class="btn btn-secondary">Visit Site</a>
-      </article>
-
-      <article class="venue-card">
-        <h3>Sports Garden DFW</h3>
-        <p>Multi-sport complex featuring beach volleyball and more.</p>
-        <a href="https://sportsgardendfw.com" class="btn btn-secondary">Visit Site</a>
-      </article>
+    <!-- Guarantees & Format -->
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="flex items-start space-x-4">
+        <span class="text-4xl">🏖️</span>
+        <div>
+          <h2 class="text-2xl font-bold mb-1">Venue</h2>
+          <p class="text-gray-600">Beach Bakyard: Dallas's premier beach volleyball destination with professional-grade courts.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4">
+        <span class="text-4xl">⚡</span>
+        <div>
+          <h2 class="text-2xl font-bold mb-1">Guaranteed Action</h2>
+          <p class="text-gray-600">Every team plays at least 4 rounds. Maximum volleyball for your investment!</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4">
+        <span class="text-4xl">💥</span>
+        <div>
+          <h2 class="text-2xl font-bold mb-1">Format</h2>
+          <p class="text-gray-600">European FIVB King of the Court: fast‑paced, high‑intensity 2v2 matches.</p>
+        </div>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Event Details</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li><strong>Entry Fee:</strong> $50 per team</li>
+          <li><strong>Equipment:</strong> Official Wilson OPTX AVP volleyballs</li>
+          <li><strong>Format:</strong> King of the Court, 4 guaranteed rounds</li>
+          <li><strong>Prize:</strong> Trophies &amp; gift cards for top teams</li>
+        </ul>
+      </div>
     </div>
+
+    <!-- Venue Cards -->
+    <section>
+      <h2 class="text-3xl font-bold mb-8 text-center">Representing Home Courts</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Beach Bakyard -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <img src="beach-bakyard.jpg" alt="Beach Bakyard" class="w-24 h-24 mb-4 object-cover rounded-full">
+          <h3 class="font-semibold text-xl mb-2">Beach Bakyard</h3>
+          <p class="text-gray-600 mb-4">Dallas's premier beach volleyball destination with multiple pro‑grade sand courts.</p>
+          <a href="https://beachbakyard.example.com" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
+        </div>
+
+        <!-- Sandy Pickle -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <img src="sandy-pickle.jpg" alt="Sandy Pickle" class="w-24 h-24 mb-4 object-cover rounded-full">
+          <h3 class="font-semibold text-xl mb-2">Sandy Pickle</h3>
+          <p class="text-gray-600 mb-4">Upscale dining + volleyball in The Village, Dallas.</p>
+          <a href="https://thevillagedallas.example.com" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
+        </div>
+
+        <!-- Mad Sand Volleyball -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <img src="mad-sand.jpg" alt="Mad Sand Volleyball" class="w-24 h-24 mb-4 object-cover rounded-full">
+          <h3 class="font-semibold text-xl mb-2">Mad Sand Volleyball</h3>
+          <p class="text-gray-600 mb-4">Elite training &amp; pro coaching to sharpen your skills.</p>
+          <a href="https://madsandvolleyball.example.com" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
+        </div>
+
+        <!-- Sports Garden DFW -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <img src="sports-garden-dfw.jpg" alt="Sports Garden DFW" class="w-24 h-24 mb-4 object-cover rounded-full">
+          <h3 class="font-semibold text-xl mb-2">Sports Garden DFW</h3>
+          <p class="text-gray-600 mb-4">Multi‑sport complex with beach volleyball + family fun.</p>
+          <a href="https://sportsgardendfw.example.com" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Call‑to‑Action Footer -->
+  <section id="register" class="bg-blue-600 text-white rounded-lg mx-4 my-12 py-12 px-6 text-center max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Ready to Compete?</h2>
+    <p class="text-lg mb-6">$50 per team · 4 rounds guaranteed · King of the Court format · Professional venue · Wilson OPTX volleyballs</p>
+    <a href="https://register.example.com" class="inline-block bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition">
+      Register Now
+    </a>
   </section>
 
-  <!-- Call to Action -->
-  <section id="register" class="register-cta container">
-    <h2>Ready to Compete?</h2>
-    <p>Join the ultimate beach volleyball showdown. Grab your partner and be part of the action!</p>
-    <a href="https://register.kingofthebeach.com" class="btn btn-primary btn-lg">Register Now</a>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer container">
-    <p>&copy; 2025 King of the Beach Tournament. All rights reserved.</p>
-  </footer>
 </body>
 </html>
