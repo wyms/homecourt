@@ -20,7 +20,7 @@
         />
       </div>
       <h1 class="text-4xl font-extrabold mb-2">Home Court Challenge</h1>
-      <p class="text-lg text-gray-600 mb-6">Wondering where the best players in DFW Play? Find out in this FIVB-Style King of the Court Tournament</p>
+      <p class="text-lg text-gray-600 mb-6">Wondering where the best players in DFW Play? Find out in in this FIVB-Style King of the Court Tournament</p>
       <a
         href="mailto:wayne@rwysolutions.com?subject=Home%20Court%20Challenge%20Registration"
         class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition"
@@ -58,7 +58,7 @@
         <div>
           <h2 class="text-2xl font-bold mb-1">Format</h2>
           <p class="text-gray-600">
-            5 teams per court · At least 4 rounds · 1 court · 1 King. Teams can only score points while on the “king” side. Top teams advance based on points.
+            5 teams per court · At least 4 rounds · 1 court · 1 King. Teams can only score while on the “king” side. Top teams advance based on points.
           </p>
         </div>
       </div>
@@ -69,7 +69,7 @@
           <li><strong>Equipment:</strong> Official Wilson OPTX AVP volleyballs</li>
           <li><strong>Game Play:</strong> 3 rounds of 15 minutes each</li>
           <li><strong>Rules:</strong> Lowest scoring team eliminated after rounds 1 and 2. Final: First team to 15 points wins.</li>
-          <li><strong>Prize:</strong> Cash &amp; and prizes cards for top teams</li>
+          <li><strong>Prize:</strong> Cash &amp; prizes for top teams</li>
         </ul>
       </div>
     </div>
@@ -135,6 +135,38 @@
           <a href="https://www.sportsgardendfw.com/" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
         </div>
 
+        <!-- NRH Private Court -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <h3 class="font-semibold text-xl mb-2">NRH Private Court</h3>
+          <p class="text-gray-600 mb-4">
+            Private court located in North Richland Hills, TX.
+          </p>
+        </div>
+
+        <!-- Sachse Private Court -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <h3 class="font-semibold text-xl mb-2">Sachse Private Court</h3>
+          <p class="text-gray-600 mb-4">
+            Private court located in Sachse, TX.
+          </p>
+        </div>
+
+        <!-- Austin Ranch -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <h3 class="font-semibold text-xl mb-2">Austin Ranch</h3>
+          <p class="text-gray-600 mb-4">
+            Austin Ranch Community volleyball courts.
+          </p>
+        </div>
+
+        <!-- Dallas Private Court -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <h3 class="font-semibold text-xl mb-2">Dallas Private Court</h3>
+          <p class="text-gray-600 mb-4">
+            Private court located in Dallas, TX.
+          </p>
+        </div>
+
       </div>
     </section>
 
@@ -147,14 +179,60 @@
   >
     <h2 class="text-3xl font-bold mb-4">Ready to Compete?</h2>
     <p class="text-lg mb-6">
-      $50 per team · Fast-paced format · King of the Court rules · Pro sand courts · AVP balls
+      $50 per team · Fast-paced format · King of the Court rules 
     </p>
-    <a
-      href="mailto:wayne@rwysolutions.com?subject=Home%20Court%20Challenge%20Registration"
-      class="inline-block bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition"
+    <form
+      action="mailto:wayne@rwysolutions.com"
+      method="POST"
+      enctype="text/plain"
+      class="space-y-6 max-w-md mx-auto text-left"
     >
-      Register Now
-    </a>
+      <div>
+        <label for="player1" class="block mb-2 font-semibold">Player 1 Name</label>
+        <input
+          type="text"
+          id="player1"
+          name="Player 1"
+          required
+          class="w-full px-4 py-2 rounded-lg text-gray-800"
+        />
+      </div>
+      <div>
+        <label for="player2" class="block mb-2 font-semibold">Player 2 Name</label>
+        <input
+          type="text"
+          id="player2"
+          name="Player 2"
+          required
+          class="w-full px-4 py-2 rounded-lg text-gray-800"
+        />
+      </div>
+      <div>
+        <label for="homecourt" class="block mb-2 font-semibold">Home Court</label>
+        <select
+          id="homecourt"
+          name="Home Court"
+          required
+          class="w-full px-4 py-2 rounded-lg text-gray-800"
+        >
+          <option value="">Select a Home Court</option>
+          <option value="Beach Bakyard">Beach Bakyard</option>
+          <option value="Sandy Pickle">Sandy Pickle</option>
+          <option value="MadSand Volleyball">MadSand Volleyball</option>
+          <option value="Sports Garden DFW">Sports Garden DFW</option>
+          <option value="NRH Private Court">NRH Private Court</option>
+          <option value="Sachse Private Court">Sachse Private Court</option>
+          <option value="Austin Ranch">Austin Ranch</option>
+          <option value="Dallas Private Court">Dallas Private Court</option>
+        </select>
+      </div>
+      <button
+        type="submit"
+        class="w-full bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition"
+      >
+        Register Now
+      </button>
+    </form>
   </section>
 
 </body>
