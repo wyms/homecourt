@@ -22,7 +22,7 @@
       <h1 class="text-4xl font-extrabold mb-2">Home Court Challenge</h1>
       <p class="text-lg text-gray-600 mb-6">Wondering where the best players in DFW Play? Find out in in this FIVB-Style King of the Court Tournament</p>
       <a
-        href="mailto:wayne@rwysolutions.com?subject=Home%20Court%20Challenge%20Registration"
+        href="#register"
         class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition"
       >
         Register Your Team
@@ -182,10 +182,9 @@
       $50 per team · Fast-paced format · King of the Court rules 
     </p>
     <form
-      action="mailto:wayne@rwysolutions.com"
-      method="POST"
-      enctype="text/plain"
+      id="registerForm"
       class="space-y-6 max-w-md mx-auto text-left"
+      onsubmit="sendMail(event)"
     >
       <div>
         <label for="player1" class="block mb-2 font-semibold">Player 1 Name</label>
@@ -233,6 +232,17 @@
         Register Now
       </button>
     </form>
+    <script>
+function sendMail(event) {
+  event.preventDefault();
+  const player1 = document.getElementById('player1').value.trim();
+  const player2 = document.getElementById('player2').value.trim();
+  const homecourt = document.getElementById('homecourt').value;
+  const subject = `Home Court ${player1} ${player2}`;
+  const body = `Player 1: ${player1}\nPlayer 2: ${player2}\nHome Court: ${homecourt}`;
+  window.location.href = `mailto:wayne@rwysolutions.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+</script>
   </section>
 
 </body>
