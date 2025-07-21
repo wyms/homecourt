@@ -5,5 +5,5 @@ function sendMail(event) {
   const homecourt = document.getElementById('homecourt').value;
   const subject = `Home Court ${player1} ${player2}`;
   const body = `Player 1: ${player1}\nPlayer 2: ${player2}\nHome Court: ${homecourt}`;
-  window.location.href = `mailto:wayne@rwysolutions.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = `mailto:homecourtsignup@beachbakyard.com?cc=wayne@rwysolutions.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
