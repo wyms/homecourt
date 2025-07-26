@@ -30,16 +30,10 @@
       <p class="text-lg text-gray-600 mb-6">
         Wondering where the best players in DFW Play? Find out in in these FIVB-Style King of the Court Tournaments. <br>
         <strong>
-          This format is designed for maximum competition and the most efficient use of time possible. Friday nights in August.
+          This format is designed for maximum competition and the most efficient use of time possible. <br> Friday nights in August starting 8/1/25.
         </strong>
       </p>
-      <a
-        href="#register"
-        class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition"
-      >
-        Register Your Team
-      </a>
-
+      
       <!-- 💡 Emphasized Benefits Section -->
       <div class="bg-yellow-100 text-yellow-900 border border-yellow-300 rounded-lg p-6 mt-10 text-left max-w-3xl mx-auto">
         <h2 class="text-2xl font-bold mb-4 flex items-center">
@@ -49,33 +43,39 @@
         <ul class="list-disc list-inside space-y-2 text-lg">
           <li>
             <strong>
-              Don't want to waste an entire day sitting around waiting to play? at poorly organized tournaments?
+              Don't want to waste an entire day sitting and reffing more than playing? 
             </strong>
           </li>
           <li>
             <strong>
-              Hate warming up 7-8 times? in one day?
+              Hate warming up 5 times or more in one day?
             </strong>
           </li>
           <li>
             <strong>
-              Looking for high-quality, high-level play? in under 3 hours?
+              Looking for high-quality, high-level play in under 3 hours?
             </strong>
           </li>
           <li>
             <strong>
-              Want an intense, efficient workout and real competition in a short timeframe?
+              Want an intense, efficient workout and high-level beach volleyball?
             </strong>
           </li>
         </ul>
         <p class="mt-4 text-base font-semibold">
           <strong>
-            Our King of the Court format is designed for serious players with tight schedules — max competition, minimal downtime.
+            Our King of the Court format is designed for maximum competition with minimal downtime.
           </strong>
         </p>
       </div>
     </div>
   </section>
+<a
+        href="#register"
+        class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition"
+      >
+        Register Your Team
+      </a>
 
   <!-- Main Content -->
   <main class="max-w-6xl mx-auto px-4 py-12 space-y-16">
@@ -94,7 +94,7 @@
       <div class="flex items-start space-x-4">
         <span class="text-4xl">⚡</span>
         <div>
-          <h2 class="text-2xl font-bold mb-1">Guaranteed 4 FIVB-King of the Court Rounds</h2>
+          <h2 class="text-2xl font-bold mb-1">Guaranteed 4 FIVB King of the Court Rounds</h2>
           <p class="text-gray-600">
             Every team will play at least 4 FIVB King of the Court Rounds. Details on format can be found <a href="https://kingofthecourt.com/" class="text-blue-600 underline">here</a>.
           </p>
@@ -182,7 +182,7 @@
 
   <!-- Call to Action -->
   <section id="register" class="bg-blue-600 text-white rounded-lg mx-4 my-12 py-12 px-6 text-center max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold mb-4">Ready to Compete?</h2>
+    <h2 class="text-3xl font-bold mb-4">Ready to Sign Up?</h2>
     <p class="text-lg mb-6">
       $50 per team · Fast-paced format · King of the Court rules rules 
     </p>
@@ -208,6 +208,23 @@
           <option value="Sports Garden DFW">Sports Garden DFW</option>
           <option value="The Strand">The Strand</option>
         </select>
+      </div>
+      <div>
+        <label for="eventdate" class="block mb-2 font-semibold">Event Date</label>
+        <select id="eventdate" name="Event Date" required class="w-full px-4 py-2 rounded-lg text-gray-800">
+          <option value="">Select a Friday in August</option>
+          <option value="August 1, 2025">Friday, August 1, 2025</option>
+          <option value="August 8, 2025">Friday, August 8, 2025</option>
+          <option value="August 15, 2025">Friday, August 15, 2025</option>
+          <option value="August 22, 2025">Friday, August 22, 2025</option>
+          <option value="August 29, 2025">Friday, August 29, 2025</option>
+        </select>
+      </div>
+      <div class="flex items-start space-x-3">
+        <input type="checkbox" id="waiverAgreement" name="Waiver Agreement" required class="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded" />
+        <label for="waiverAgreement" class="text-sm font-medium text-white">
+          I agree to the <a href="waiver.html" target="_blank" class="text-blue-200 underline hover:text-blue-100">liability waiver and media release</a>
+        </label>
       </div>
       <button type="submit" class="w-full bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition">
         Register Now
