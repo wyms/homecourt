@@ -130,7 +130,7 @@
         <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
           <img src="bbyard.jpg_large" alt="Beach Bakyard Court" class="w-32 h-20 mb-4 object-cover rounded-md" />
           <h3 class="font-semibold text-xl mb-2">Beach Bakyard</h3>
-          <p class="text-gray-600 mb-4">Dallas's premier beach volleyball destination with multiple pro‑grade sand courts.</p>
+          <p class="text-gray-600 mb-4">Where legends grow and wilderness thrives - Plano's premier beach volleyball destination.</p>
           <a href="https://beachbakyard.com/" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
         </div>
 
@@ -158,7 +158,7 @@
         <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
           <img src="https://thestranddfw.com/wp-content/uploads/2020/02/drone_strand_4.jpg" alt="The Strand Court" class="w-32 h-20 mb-4 object-cover rounded-md" />
           <h3 class="font-semibold text-xl mb-2">The Strand</h3>
-          <p class="text-gray-600 mb-4">Premier sand volleyball courts in DFW.</p>
+          <p class="text-gray-600 mb-4">Premier sand volleyball courts in Lewisville, TX.</p>
           <a href="https://thestranddfw.com/" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
         </div>
 
@@ -170,6 +170,28 @@
         <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
           <h3 class="font-semibold text-xl mb-2">Sachse Private Court</h3>
           <p class="text-gray-600 mb-4">Private court located in Sachse, TX.</p>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <h3 class="font-semibold text-xl mb-2">Dallas Private Court</h3>
+          <p class="text-gray-600 mb-4">Private court located in Dallas, TX.</p>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <h3 class="font-semibold text-xl mb-2">Lantana Private Court</h3>
+          <p class="text-gray-600 mb-4">Private court located in Lantana, TX.</p>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <h3 class="font-semibold text-xl mb-2">TCU Beach Volleyball</h3>
+          <p class="text-gray-600 mb-4">University-level competition facility with professional-grade sand courts in Fort Worth.</p>
+          <a href="https://gofrogs.com/sports/2018/7/13/facilities-tcu-facilities-beachvolleyball-html.aspx" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <h3 class="font-semibold text-xl mb-2">Game On Sports Complex</h3>
+          <p class="text-gray-600 mb-4">North Texas's largest multi-sport complex with 8 dedicated outdoor sand volleyball courts.</p>
+          <a href="https://www.gameonfw.com/beach-volleyball-preview" class="mt-auto text-blue-600 hover:underline">Visit Site</a>
         </div>
 
         <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
@@ -203,11 +225,15 @@
           <option value="">Select a Home Court</option>
           <option value="Austin Ranch">Austin Ranch</option>
           <option value="Beach Bakyard">Beach Bakyard</option>
+          <option value="Dallas Private Court">Dallas Private Court</option>
+          <option value="Game On Sports Complex">Game On Sports Complex</option>
+          <option value="Lantana Private Court">Lantana Private Court</option>
           <option value="MadSand Volleyball">MadSand Volleyball</option>
           <option value="NRH Private Court">NRH Private Court</option>
           <option value="Sachse Private Court">Sachse Private Court</option>
           <option value="Sandy Pickle">Sandy Pickle</option>
           <option value="Sports Garden DFW">Sports Garden DFW</option>
+          <option value="TCU Beach Volleyball">TCU Beach Volleyball</option>
           <option value="The Strand">The Strand</option>
         </select>
       </div>
@@ -252,7 +278,7 @@
         const eventdate = document.getElementById('eventdate').value;
         const waiverAgreed = document.getElementById('waiverAgreement').checked;
         const subject = `Home Court ${player1} ${player2}`;
-        const body = `Player 1: ${player1}\nPlayer 2: ${player2}\nHome Court: ${homecourt}\nEvent Date: ${eventdate}\nWaiver Agreement: ${waiverAgreed ? 'Agreed' : 'Not Agreed'}`;
+        const body = `Player 1: ${player1}\nPlayer 2: ${player2}\nHome Court: ${homecourt}\nEvent Date: ${eventdate}\nWaiver Agreement: ${waiverAgreed ? 'Agreed' : 'Not Agreed'}\n\nIMPORTANT: Please send $50 payment via Venmo to secure your team's spot in the tournament.\nVenmo: https://venmo.com/u/Daytonscott (@Daytonscott)\n\nYour spot is not reserved until payment is received.`;
         window.location.href = `mailto:wayne@rwysolutions.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       }
     </script>
