@@ -20,12 +20,35 @@
   <section class="py-12 bg-white shadow-md">
     <div class="max-w-5xl mx-auto px-4 text-center">
       <div class="flex justify-center mb-8">
-        <img
-          src="superspike.webp"
-          alt="Super Spike V'Ball"
-          class="w-96 h-auto"
-        />
+        <div id="videoContainer" class="cursor-pointer hover:opacity-80 transition" onclick="showVideo()">
+          <img
+            id="superSpikeImage"
+            src="Superspikevball.png"
+            alt="Super Spike V'Ball - Click to play video"
+            class="w-96 h-auto"
+          />
+        </div>
+        <video 
+          id="superSpikeVideo"
+          width="560" 
+          height="315" 
+          controls
+          autoplay
+          style="display: none;"
+          class="w-96 h-auto">
+          <source src="superspike.mov" type="video/mp4">
+          <source src="superspike.mov" type="video/quicktime">
+          Your browser does not support the video tag.
+        </video>
       </div>
+      <script>
+        function showVideo() {
+          document.getElementById('superSpikeImage').style.display = 'none';
+          const video = document.getElementById('superSpikeVideo');
+          video.style.display = 'block';
+          video.play();
+        }
+      </script>
       <h1 class="text-4xl font-extrabold mb-2">Home Court Series</h1>
       <p class="text-lg text-gray-600 mb-6">
         Wondering where the best players in DFW Play? Find out in in these FIVB-Style King of the Court Tournaments. <br>
