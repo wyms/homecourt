@@ -86,7 +86,8 @@
       <ul class="list-disc list-inside space-y-1 text-sm mb-4">
         <li>Each rally starts with a serve from Challenger's side</li>
         <li>Either player on the team can serve (no rotation required)</li>
-        <li>Teams must follow serving order displayed on scoring screen</li>
+        <li><strong>Miss a serve = your team is off, next team serves</strong></li>
+        <li>Each team gets 1 serve redo per round (optional)</li>
         <li>Serving mistakes are NOT points except:
           <ul class="list-disc list-inside ml-6 mt-1">
             <li>Third consecutive serving mistake</li>
@@ -120,6 +121,18 @@
         </ul>
       </div>
 
+      <h3 class="text-xl font-semibold mb-3">Round Groupings</h3>
+      <div class="space-y-4">
+        <div>
+          <h4 class="font-semibold mb-2">Round 1</h4>
+          <p class="text-sm text-gray-600">Teams are grouped randomly or by registration order into groups of 5.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Rounds 2 & 3</h4>
+          <p class="text-sm text-gray-600">Teams are regrouped based on cumulative point totals from previous rounds. Similar-performing teams are grouped together to ensure competitive matches.</p>
+        </div>
+      </div>
+
       <h3 class="text-xl font-semibold mb-3">Championship System</h3>
       <div class="grid md:grid-cols-2 gap-6">
         <div>
@@ -143,13 +156,18 @@
       </div>
 
       <h3 class="text-xl font-semibold mb-3 mt-6">Tie-Breaking Rules</h3>
-      <p class="mb-2">When teams have the same total points:</p>
-      <ol class="list-decimal list-inside space-y-1 text-sm">
-        <li>Team with more consecutive points on King's side ranks higher</li>
-        <li>If tied, team who achieved longest stay first ranks higher</li>
-        <li>If both have 0 points, team who reached King's side first ranks higher</li>
-        <li>If neither reached King's side, team starting in better position ranks higher</li>
-      </ol>
+      <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+        <h4 class="font-semibold mb-2">Championship Advancement Ties (After Round 3)</h4>
+        <p class="text-sm text-gray-700 mb-2">If teams are tied for 5th place (last championship spot):</p>
+        <ul class="list-disc list-inside space-y-1 text-sm">
+          <li>Tied teams play a 4-serve sideout competition</li>
+          <li>Each team gets 4 serves total</li>
+          <li>Team with most successful sideouts advances to championship</li>
+          <li>If still tied, sudden-death sideout until one team wins</li>
+        </ul>
+      </div>
+      
+      <p class="text-xs text-gray-500 mt-4">Other ties during regular rounds are resolved by tournament director discretion.</p>
     </div>
 
     <!-- Special Rules -->
