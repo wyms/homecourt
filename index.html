@@ -364,7 +364,7 @@
         const waiverAgreed = document.getElementById('waiverAgreement').checked;
         const subject = `Home Court ${player1} ${player2}`;
         const body = `Player 1: ${player1}\nPlayer 1 Email: ${player1email}\nPlayer 1 Phone: ${player1phone}\nPlayer 2: ${player2}\nPlayer 2 Email: ${player2email}\nPlayer 2 Phone: ${player2phone}\nHome Court: ${homecourt}\nEvent Date: ${eventdate}\nWaiver Agreement: ${waiverAgreed ? 'Agreed' : 'Not Agreed'}\n\nIMPORTANT: Please send $50 payment via Venmo to secure your team's spot in the tournament.\nVenmo: https://venmo.com/u/Daytonscott (@Daytonscott)\n\nYour spot is not reserved until payment is received.\n\n--- IMPORTANT TOURNAMENT INFORMATION ---\nPlease review these links before the tournament:\n\n• Tournament Rules: [YOUR_DOMAIN]/rules.html\n• Tournament Formats: [YOUR_DOMAIN]/formats.html\n• Bakyard Info & Parking: [YOUR_DOMAIN]/bakyard-info.html\n• Scoresheet Options: [YOUR_DOMAIN]/registered-teams.html (scroll to bottom)\n• Liability Waiver: [YOUR_DOMAIN]/waiver.html\n\nSee you at The Bakyard!`;
-        window.location.href = `mailto:homecourtsignup@beachbakyard.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = `mailto:homecourtsignup@beachbakyard.com?cc=dayton.arellano@gmail.com,wayne@rwysolutions.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       }
     </script>
   </section>
