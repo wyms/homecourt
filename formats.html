@@ -25,9 +25,9 @@
     <!-- 6 Teams Format -->
     <div class="bg-white rounded-lg shadow-md p-8">
       <h2 class="text-2xl font-bold mb-6 text-center text-blue-800">6 Teams Format</h2>
-      <p class="text-center text-gray-600 mb-8">3 rounds total, each team sits out exactly 1 round, everyone plays 2 rounds</p>
+      <p class="text-center text-gray-600 mb-8">6 rounds total, each team sits out exactly 1 round, everyone plays 5 rounds</p>
       
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="bg-blue-50 rounded-lg p-6">
           <h3 class="text-lg font-bold mb-4 text-blue-800">Round 1</h3>
           <div class="space-y-2">
@@ -39,7 +39,7 @@
         <div class="bg-green-50 rounded-lg p-6">
           <h3 class="text-lg font-bold mb-4 text-green-800">Round 2</h3>
           <div class="space-y-2">
-            <div class="font-semibold">Playing: Teams 6, 1, 2, 3, 4</div>
+            <div class="font-semibold">Playing: Teams 1, 2, 3, 4, 6</div>
             <div class="text-red-600 font-medium">Sitting: Team 5</div>
           </div>
         </div>
@@ -47,8 +47,32 @@
         <div class="bg-purple-50 rounded-lg p-6">
           <h3 class="text-lg font-bold mb-4 text-purple-800">Round 3</h3>
           <div class="space-y-2">
-            <div class="font-semibold">Playing: Teams 5, 6, 1, 2, 3</div>
+            <div class="font-semibold">Playing: Teams 1, 2, 3, 5, 6</div>
             <div class="text-red-600 font-medium">Sitting: Team 4</div>
+          </div>
+        </div>
+        
+        <div class="bg-orange-50 rounded-lg p-6">
+          <h3 class="text-lg font-bold mb-4 text-orange-800">Round 4</h3>
+          <div class="space-y-2">
+            <div class="font-semibold">Playing: Teams 1, 2, 4, 5, 6</div>
+            <div class="text-red-600 font-medium">Sitting: Team 3</div>
+          </div>
+        </div>
+        
+        <div class="bg-red-50 rounded-lg p-6">
+          <h3 class="text-lg font-bold mb-4 text-red-800">Round 5</h3>
+          <div class="space-y-2">
+            <div class="font-semibold">Playing: Teams 1, 3, 4, 5, 6</div>
+            <div class="text-red-600 font-medium">Sitting: Team 2</div>
+          </div>
+        </div>
+        
+        <div class="bg-yellow-50 rounded-lg p-6">
+          <h3 class="text-lg font-bold mb-4 text-yellow-800">Round 6</h3>
+          <div class="space-y-2">
+            <div class="font-semibold">Playing: Teams 2, 3, 4, 5, 6</div>
+            <div class="text-red-600 font-medium">Sitting: Team 1</div>
           </div>
         </div>
       </div>
@@ -56,12 +80,12 @@
       <div class="mt-8 bg-gray-100 rounded-lg p-6">
         <h3 class="text-lg font-bold mb-4">Summary by Team:</h3>
         <div class="grid md:grid-cols-2 gap-4 text-sm">
-          <div><strong>Team 1:</strong> Plays rounds 1, 2, 3</div>
-          <div><strong>Team 2:</strong> Plays rounds 1, 2, 3</div>
-          <div><strong>Team 3:</strong> Plays rounds 1, 2, 3</div>
-          <div><strong>Team 4:</strong> Plays rounds 1, 2 (sits round 3)</div>
-          <div><strong>Team 5:</strong> Plays rounds 1, 3 (sits round 2)</div>
-          <div><strong>Team 6:</strong> Plays rounds 2, 3 (sits round 1)</div>
+          <div><strong>Team 1:</strong> Plays rounds 1, 2, 3, 4, 5 (sits round 6)</div>
+          <div><strong>Team 2:</strong> Plays rounds 1, 2, 3, 4, 6 (sits round 5)</div>
+          <div><strong>Team 3:</strong> Plays rounds 1, 2, 3, 5, 6 (sits round 4)</div>
+          <div><strong>Team 4:</strong> Plays rounds 1, 2, 4, 5, 6 (sits round 3)</div>
+          <div><strong>Team 5:</strong> Plays rounds 1, 3, 4, 5, 6 (sits round 2)</div>
+          <div><strong>Team 6:</strong> Plays rounds 2, 3, 4, 5, 6 (sits round 1)</div>
         </div>
       </div>
     </div>
@@ -69,46 +93,62 @@
     <!-- 7 Teams Format -->
     <div class="bg-white rounded-lg shadow-md p-8">
       <h2 class="text-2xl font-bold mb-6 text-center text-green-800">7 Teams Format</h2>
-      <p class="text-center text-gray-600 mb-8">5 rounds total, each team sits out exactly 2 rounds, everyone plays 3 rounds</p>
+      <p class="text-center text-gray-600 mb-8">7 rounds total, each team sits out exactly 2 rounds, everyone plays 5 rounds</p>
       
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-blue-50 rounded-lg p-6">
-          <h3 class="text-lg font-bold mb-4 text-blue-800">Round 1</h3>
-          <div class="space-y-2">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div class="bg-blue-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-blue-800">Round 1</h3>
+          <div class="space-y-1 text-sm">
             <div class="font-semibold">Playing: Teams 1, 2, 3, 4, 5</div>
             <div class="text-red-600 font-medium">Sitting: Teams 6, 7</div>
           </div>
         </div>
         
-        <div class="bg-green-50 rounded-lg p-6">
-          <h3 class="text-lg font-bold mb-4 text-green-800">Round 2</h3>
-          <div class="space-y-2">
-            <div class="font-semibold">Playing: Teams 6, 7, 1, 2, 3</div>
+        <div class="bg-green-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-green-800">Round 2</h3>
+          <div class="space-y-1 text-sm">
+            <div class="font-semibold">Playing: Teams 1, 2, 3, 6, 7</div>
             <div class="text-red-600 font-medium">Sitting: Teams 4, 5</div>
           </div>
         </div>
         
-        <div class="bg-purple-50 rounded-lg p-6">
-          <h3 class="text-lg font-bold mb-4 text-purple-800">Round 3</h3>
-          <div class="space-y-2">
-            <div class="font-semibold">Playing: Teams 4, 5, 6, 7, 1</div>
+        <div class="bg-purple-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-purple-800">Round 3</h3>
+          <div class="space-y-1 text-sm">
+            <div class="font-semibold">Playing: Teams 1, 4, 5, 6, 7</div>
             <div class="text-red-600 font-medium">Sitting: Teams 2, 3</div>
           </div>
         </div>
         
-        <div class="bg-orange-50 rounded-lg p-6">
-          <h3 class="text-lg font-bold mb-4 text-orange-800">Round 4</h3>
-          <div class="space-y-2">
+        <div class="bg-orange-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-orange-800">Round 4</h3>
+          <div class="space-y-1 text-sm">
             <div class="font-semibold">Playing: Teams 2, 3, 4, 5, 6</div>
             <div class="text-red-600 font-medium">Sitting: Teams 7, 1</div>
           </div>
         </div>
         
-        <div class="bg-red-50 rounded-lg p-6">
-          <h3 class="text-lg font-bold mb-4 text-red-800">Round 5</h3>
-          <div class="space-y-2">
-            <div class="font-semibold">Playing: Teams 7, 1, 2, 3, 4</div>
+        <div class="bg-red-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-red-800">Round 5</h3>
+          <div class="space-y-1 text-sm">
+            <div class="font-semibold">Playing: Teams 2, 3, 4, 7, 1</div>
             <div class="text-red-600 font-medium">Sitting: Teams 5, 6</div>
+          </div>
+        </div>
+        
+        <div class="bg-yellow-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-yellow-800">Round 6</h3>
+          <div class="space-y-1 text-sm">
+            <div class="font-semibold">Playing: Teams 3, 5, 6, 7, 1</div>
+            <div class="text-red-600 font-medium">Sitting: Teams 2, 4</div>
+          </div>
+        </div>
+        
+        <div class="bg-indigo-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-indigo-800">Round 7</h3>
+          <div class="space-y-1 text-sm">
+            <div class="font-semibold">Playing: Teams 4, 5, 6, 7, 2</div>
+            <div class="text-red-600 font-medium">Sitting: Teams 1, 3</div>
           </div>
         </div>
       </div>
@@ -116,13 +156,13 @@
       <div class="mt-8 bg-gray-100 rounded-lg p-6">
         <h3 class="text-lg font-bold mb-4">Summary by Team:</h3>
         <div class="grid md:grid-cols-2 gap-4 text-sm">
-          <div><strong>Team 1:</strong> Plays rounds 1, 2, 3 (sits rounds 4, 5)</div>
-          <div><strong>Team 2:</strong> Plays rounds 1, 2, 4 (sits rounds 3, 5)</div>
-          <div><strong>Team 3:</strong> Plays rounds 1, 2, 4 (sits rounds 3, 5)</div>
-          <div><strong>Team 4:</strong> Plays rounds 1, 3, 4 (sits rounds 2, 5)</div>
-          <div><strong>Team 5:</strong> Plays rounds 1, 3, 4 (sits rounds 2, 5)</div>
-          <div><strong>Team 6:</strong> Plays rounds 2, 3, 4 (sits rounds 1, 5)</div>
-          <div><strong>Team 7:</strong> Plays rounds 2, 3, 5 (sits rounds 1, 4)</div>
+          <div><strong>Team 1:</strong> Plays rounds 1, 2, 3, 5, 6 (sits rounds 4, 7)</div>
+          <div><strong>Team 2:</strong> Plays rounds 1, 2, 4, 5, 7 (sits rounds 3, 6)</div>
+          <div><strong>Team 3:</strong> Plays rounds 1, 2, 4, 6, 7 (sits rounds 3, 5)</div>
+          <div><strong>Team 4:</strong> Plays rounds 1, 3, 4, 5, 7 (sits rounds 2, 6)</div>
+          <div><strong>Team 5:</strong> Plays rounds 1, 3, 4, 6, 7 (sits rounds 2, 5)</div>
+          <div><strong>Team 6:</strong> Plays rounds 2, 3, 4, 6, 7 (sits rounds 1, 5)</div>
+          <div><strong>Team 7:</strong> Plays rounds 2, 3, 5, 6, 7 (sits rounds 1, 4)</div>
         </div>
       </div>
     </div>
@@ -130,46 +170,70 @@
     <!-- 8 Teams Format -->
     <div class="bg-white rounded-lg shadow-md p-8">
       <h2 class="text-2xl font-bold mb-6 text-center text-purple-800">8 Teams Format</h2>
-      <p class="text-center text-gray-600 mb-8">5 rounds total, each team sits out exactly 2-3 rounds, everyone plays 2-3 rounds</p>
+      <p class="text-center text-gray-600 mb-8">8 rounds total, each team sits out exactly 3 rounds, everyone plays 5 rounds</p>
       
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-blue-50 rounded-lg p-6">
-          <h3 class="text-lg font-bold mb-4 text-blue-800">Round 1</h3>
-          <div class="space-y-2">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-blue-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-blue-800">Round 1</h3>
+          <div class="space-y-1 text-xs">
             <div class="font-semibold">Playing: Teams 1, 2, 3, 4, 5</div>
             <div class="text-red-600 font-medium">Sitting: Teams 6, 7, 8</div>
           </div>
         </div>
         
-        <div class="bg-green-50 rounded-lg p-6">
-          <h3 class="text-lg font-bold mb-4 text-green-800">Round 2</h3>
-          <div class="space-y-2">
-            <div class="font-semibold">Playing: Teams 6, 7, 8, 1, 2</div>
+        <div class="bg-green-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-green-800">Round 2</h3>
+          <div class="space-y-1 text-xs">
+            <div class="font-semibold">Playing: Teams 1, 2, 6, 7, 8</div>
             <div class="text-red-600 font-medium">Sitting: Teams 3, 4, 5</div>
           </div>
         </div>
         
-        <div class="bg-purple-50 rounded-lg p-6">
-          <h3 class="text-lg font-bold mb-4 text-purple-800">Round 3</h3>
-          <div class="space-y-2">
-            <div class="font-semibold">Playing: Teams 3, 4, 5, 6, 7</div>
-            <div class="text-red-600 font-medium">Sitting: Teams 8, 1, 2</div>
+        <div class="bg-purple-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-purple-800">Round 3</h3>
+          <div class="space-y-1 text-xs">
+            <div class="font-semibold">Playing: Teams 1, 3, 4, 6, 7</div>
+            <div class="text-red-600 font-medium">Sitting: Teams 2, 5, 8</div>
           </div>
         </div>
         
-        <div class="bg-orange-50 rounded-lg p-6">
-          <h3 class="text-lg font-bold mb-4 text-orange-800">Round 4</h3>
-          <div class="space-y-2">
-            <div class="font-semibold">Playing: Teams 8, 1, 2, 3, 4</div>
-            <div class="text-red-600 font-medium">Sitting: Teams 5, 6, 7</div>
+        <div class="bg-orange-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-orange-800">Round 4</h3>
+          <div class="space-y-1 text-xs">
+            <div class="font-semibold">Playing: Teams 1, 3, 5, 8, 2</div>
+            <div class="text-red-600 font-medium">Sitting: Teams 4, 6, 7</div>
           </div>
         </div>
         
-        <div class="bg-red-50 rounded-lg p-6">
-          <h3 class="text-lg font-bold mb-4 text-red-800">Round 5</h3>
-          <div class="space-y-2">
-            <div class="font-semibold">Playing: Teams 5, 6, 7, 8, 1</div>
-            <div class="text-red-600 font-medium">Sitting: Teams 2, 3, 4</div>
+        <div class="bg-red-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-red-800">Round 5</h3>
+          <div class="space-y-1 text-xs">
+            <div class="font-semibold">Playing: Teams 4, 5, 6, 8, 2</div>
+            <div class="text-red-600 font-medium">Sitting: Teams 1, 3, 7</div>
+          </div>
+        </div>
+        
+        <div class="bg-yellow-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-yellow-800">Round 6</h3>
+          <div class="space-y-1 text-xs">
+            <div class="font-semibold">Playing: Teams 4, 7, 8, 2, 3</div>
+            <div class="text-red-600 font-medium">Sitting: Teams 1, 5, 6</div>
+          </div>
+        </div>
+        
+        <div class="bg-indigo-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-indigo-800">Round 7</h3>
+          <div class="space-y-1 text-xs">
+            <div class="font-semibold">Playing: Teams 5, 6, 7, 3, 1</div>
+            <div class="text-red-600 font-medium">Sitting: Teams 2, 4, 8</div>
+          </div>
+        </div>
+        
+        <div class="bg-pink-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-pink-800">Round 8</h3>
+          <div class="space-y-1 text-xs">
+            <div class="font-semibold">Playing: Teams 6, 7, 8, 4, 5</div>
+            <div class="text-red-600 font-medium">Sitting: Teams 1, 2, 3</div>
           </div>
         </div>
       </div>
@@ -177,17 +241,14 @@
       <div class="mt-8 bg-gray-100 rounded-lg p-6">
         <h3 class="text-lg font-bold mb-4">Summary by Team:</h3>
         <div class="grid md:grid-cols-2 gap-4 text-sm">
-          <div><strong>Team 1:</strong> Plays rounds 1, 2, 4, 5 (sits round 3) - 4 rounds</div>
-          <div><strong>Team 2:</strong> Plays rounds 1, 2, 4 (sits rounds 3, 5) - 3 rounds</div>
-          <div><strong>Team 3:</strong> Plays rounds 1, 3, 4 (sits rounds 2, 5) - 3 rounds</div>
-          <div><strong>Team 4:</strong> Plays rounds 1, 3, 4 (sits rounds 2, 5) - 3 rounds</div>
-          <div><strong>Team 5:</strong> Plays rounds 1, 3, 5 (sits rounds 2, 4) - 3 rounds</div>
-          <div><strong>Team 6:</strong> Plays rounds 2, 3, 5 (sits rounds 1, 4) - 3 rounds</div>
-          <div><strong>Team 7:</strong> Plays rounds 2, 3, 5 (sits rounds 1, 4) - 3 rounds</div>
-          <div><strong>Team 8:</strong> Plays rounds 2, 4, 5 (sits rounds 1, 3) - 3 rounds</div>
-        </div>
-        <div class="mt-4 p-4 bg-yellow-100 rounded-lg">
-          <p class="text-sm text-yellow-800"><strong>Note:</strong> Team 1 plays one extra round (4 vs 3). For complete fairness, consider removing Team 1 from Round 5 and having Teams 5, 6, 7, 8, 2 play instead.</p>
+          <div><strong>Team 1:</strong> Plays rounds 1, 2, 3, 4, 7 (sits rounds 5, 6, 8)</div>
+          <div><strong>Team 2:</strong> Plays rounds 1, 4, 5, 6, 8 (sits rounds 2, 3, 7)</div>
+          <div><strong>Team 3:</strong> Plays rounds 1, 3, 4, 6, 7 (sits rounds 2, 5, 8)</div>
+          <div><strong>Team 4:</strong> Plays rounds 1, 3, 5, 6, 8 (sits rounds 2, 4, 7)</div>
+          <div><strong>Team 5:</strong> Plays rounds 1, 4, 5, 7, 8 (sits rounds 2, 3, 6)</div>
+          <div><strong>Team 6:</strong> Plays rounds 2, 3, 5, 7, 8 (sits rounds 1, 4, 6)</div>
+          <div><strong>Team 7:</strong> Plays rounds 2, 3, 6, 7, 8 (sits rounds 1, 4, 5)</div>
+          <div><strong>Team 8:</strong> Plays rounds 2, 4, 5, 6, 8 (sits rounds 1, 3, 7)</div>
         </div>
       </div>
     </div>
@@ -202,15 +263,11 @@
         </li>
         <li class="flex items-start">
           <span class="text-blue-600 mr-2">•</span>
-          <span>Teams sitting out can rest, warm up, or assist with reffing</span>
-        </li>
-        <li class="flex items-start">
-          <span class="text-blue-600 mr-2">•</span>
-          <span>Final rankings determined by total points earned across all rounds played</span>
-        </li>
-        <li class="flex items-start">
-          <span class="text-blue-600 mr-2">•</span>
           <span>In case of ties, head-to-head results in shared rounds will be used as tiebreaker</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-blue-600 mr-2">•</span>
+          <span><strong>Winner determined by most number of cumulative points across all rounds played</strong></span>
         </li>
       </ul>
     </div>
