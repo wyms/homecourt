@@ -121,6 +121,14 @@
         <p class="text-lg font-semibold text-gray-800 mb-2">8 Teams Registered</p>
         <p class="text-sm text-gray-600">Registration is ongoing. Teams appear after payment is received.</p>
       </div>
+
+      <!-- Random Order Generator -->
+      <div class="text-center mt-6 pt-6 border-t border-gray-200">
+        <button id="randomizeBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition-colors duration-200">
+          🎲 Generate Random Order
+        </button>
+        <p class="text-sm text-gray-600 mt-2">Click to randomize team order for tournament setup</p>
+      </div>
     </div>
 
     <!-- Scoresheet Options -->
@@ -166,6 +174,67 @@
     </div>
 
   </main>
+
+  <script>
+    document.getElementById('randomizeBtn').addEventListener('click', function() {
+      // Get all team containers
+      const teamsContainer = document.querySelector('.space-y-4');
+      const teamDivs = Array.from(teamsContainer.children);
+      
+      // Extract team data
+      const teams = teamDivs.map(div => {
+        const nameElement = div.querySelector('.font-semibold');
+        const representingElement = div.querySelector('.text-sm.text-gray-600');
+        const tagElement = div.querySelector('.inline-block');
+        
+        return {
+          name: nameElement.textContent,
+          representing: representingElement.textContent,
+          tag: tagElement.textContent,
+          tagClasses: tagElement.className
+        };
+      });
+      
+      // Shuffle the teams array using Fisher-Yates algorithm
+      for (let i = teams.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [teams[i], teams[j]] = [teams[j], teams[i]];
+      }
+      
+      // Update the DOM with randomized order
+      teams.forEach((team, index) => {
+        const teamDiv = teamDivs[index];
+        const nameElement = teamDiv.querySelector('.font-semibold');
+        const representingElement = teamDiv.querySelector('.text-sm.text-gray-600');
+        const tagElement = teamDiv.querySelector('.inline-block');
+        
+        nameElement.textContent = team.name;
+        representingElement.textContent = team.representing;
+        tagElement.textContent = team.tag;
+        tagElement.className = team.tagClasses;
+        
+        // Add or update team number
+        let numberElement = teamDiv.querySelector('.team-number');
+        if (!numberElement) {
+          numberElement = document.createElement('div');
+          numberElement.className = 'team-number flex-shrink-0 w-8 h-8 bg-gray-800 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4';
+          teamDiv.insertBefore(numberElement, teamDiv.firstChild);
+        }
+        numberElement.textContent = index + 1;
+      });
+      
+      // Show confirmation message
+      const button = document.getElementById('randomizeBtn');
+      const originalText = button.innerHTML;
+      button.innerHTML = '✅ Teams Randomized!';
+      button.disabled = true;
+      
+      setTimeout(() => {
+        button.innerHTML = originalText;
+        button.disabled = false;
+      }, 2000);
+    });
+  </script>
 
 </body>
 </html>
