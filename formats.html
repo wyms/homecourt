@@ -874,9 +874,6 @@
         left: 0;
         top: 0;
         width: 100%;
-        height: auto;
-        overflow: visible;
-        page-break-after: avoid;
       }
       
       /* Hide elements that shouldn't print */
@@ -884,64 +881,23 @@
         display: none !important;
       }
       
-      /* Prevent page breaks within important sections */
-      .print-section h2,
-      .print-section .grid > div,
-      .print-section .bg-gradient-to-r {
-        page-break-inside: avoid;
-        break-inside: avoid;
-      }
-      
-      /* Optimize spacing for print */
+      /* Basic print formatting */
       .print-section h2 {
-        font-size: 18px;
-        margin-bottom: 15px;
+        font-size: 20px;
+        margin-bottom: 16px;
         text-align: center;
-      }
-      
-      .print-section p {
-        font-size: 12px;
-        margin-bottom: 10px;
       }
       
       .print-section .grid {
         display: grid;
-        gap: 10px;
-        margin-bottom: 15px;
+        gap: 12px;
+        margin-bottom: 16px;
       }
       
       .print-section .rounded-lg {
-        border: 1px solid #333;
-        padding: 8px;
-        border-radius: 4px;
-        margin-bottom: 8px;
-      }
-      
-      /* Compact text for print */
-      .print-section .text-sm {
-        font-size: 10px;
-      }
-      
-      .print-section .text-xs {
-        font-size: 9px;
-      }
-      
-      /* Ensure proper page ending */
-      .print-section::after {
-        content: "";
-        display: block;
-        height: 1px;
-        page-break-after: always;
-      }
-      
-      /* Remove extra spacing that might cause blank pages */
-      .print-section .mt-8,
-      .print-section .mb-8,
-      .print-section .py-8 {
-        margin-top: 10px !important;
-        margin-bottom: 10px !important;
-        padding-top: 5px !important;
-        padding-bottom: 5px !important;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 6px;
       }
     }
   </style>
@@ -955,17 +911,9 @@
       const formatElement = document.getElementById(formatId);
       formatElement.classList.add('print-section');
       
-      // Hide print buttons and other non-essential elements during printing
+      // Hide print buttons during printing
       const buttons = formatElement.querySelectorAll('button');
       buttons.forEach(button => button.classList.add('no-print'));
-      
-      // Hide any extra spacing elements that might cause blank pages
-      const extraSpacing = document.querySelectorAll('.py-12, .space-y-12, .space-y-16');
-      extraSpacing.forEach(element => {
-        if (!formatElement.contains(element)) {
-          element.style.display = 'none';
-        }
-      });
       
       // Print
       window.print();
@@ -975,11 +923,6 @@
         document.body.style.visibility = 'visible';
         formatElement.classList.remove('print-section');
         buttons.forEach(button => button.classList.remove('no-print'));
-        
-        // Restore hidden spacing elements
-        extraSpacing.forEach(element => {
-          element.style.display = '';
-        });
       }, 1000);
     }
   </script>
