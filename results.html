@@ -249,18 +249,6 @@
           </div>
           
           <div>
-            <label for="tournamentDate" class="block mb-2 font-semibold text-gray-700">Tournament Date</label>
-            <select id="tournamentDate" name="tournamentDate" required class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
-              <option value="">Select Tournament Date</option>
-              <option value="August 1, 2025">August 1, 2025</option>
-              <option value="August 8, 2025">August 8, 2025</option>
-              <option value="August 15, 2025">August 15, 2025</option>
-              <option value="August 22, 2025">August 22, 2025</option>
-              <option value="August 29, 2025">August 29, 2025</option>
-            </select>
-          </div>
-          
-          <div>
             <label for="whatLiked" class="block mb-2 font-semibold text-gray-700">What did you like about the tournament?</label>
             <textarea id="whatLiked" name="whatLiked" rows="4" placeholder="Tell us what worked well..." class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
           </div>
@@ -393,12 +381,11 @@
       
       const playerName = document.getElementById('playerName').value.trim();
       const playerEmail = document.getElementById('playerEmail').value.trim();
-      const tournamentDate = document.getElementById('tournamentDate').value;
       const whatLiked = document.getElementById('whatLiked').value.trim();
       const whatImprove = document.getElementById('whatImprove').value.trim();
       const additionalComments = document.getElementById('additionalComments').value.trim();
       
-      const subject = `Home Court Tournament Feedback - ${tournamentDate}`;
+      const subject = 'Home Court Tournament Feedback';
       const body = `Hello,
 
 I would like to provide feedback on the Home Court tournament:
@@ -406,7 +393,6 @@ I would like to provide feedback on the Home Court tournament:
 PLAYER INFORMATION:
 Name: ${playerName}
 Email: ${playerEmail || 'Not provided'}
-Tournament Date: ${tournamentDate}
 
 WHAT I LIKED:
 ${whatLiked || 'No feedback provided'}
