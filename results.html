@@ -173,6 +173,60 @@
         <p class="text-lg font-semibold text-gray-800 mb-2">8 Teams Competed</p>
         <p class="text-sm text-gray-600">August 1, 2025 • Beach Bakyard • King of the Court Format</p>
       </div>
+
+      <!-- Tournament Media -->
+      <div class="mt-8 pt-6 border-t border-gray-200">
+        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Tournament Highlights</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Photo 1 -->
+          <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+            <img src="homecourt_finals_20250801.png" alt="HomeCourt Finals August 1, 2025" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300 cursor-pointer" onclick="openImageModal(this)">
+            <div class="p-3">
+              <p class="text-sm text-gray-600 text-center">Top 5 Teams</p>
+            </div>
+          </div>
+          
+          <!-- Video 2 -->
+          <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+            <video controls class="w-full h-64 object-cover">
+              <source src="homecourt20250801-v2.mov" type="video/quicktime">
+              <source src="homecourt20250801-v2.mov" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="p-3">
+              <p class="text-sm text-gray-600 text-center">Michael crushing it</p>
+            </div>
+          </div>
+          
+          <!-- Video 1 -->
+          <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+            <video controls class="w-full h-64 object-cover">
+              <source src="homecourt20250801-v1.mov" type="video/quicktime">
+              <source src="homecourt20250801-v1.mov" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="p-3">
+              <p class="text-sm text-gray-600 text-center">That serve and option 🤯</p>
+            </div>
+          </div>
+          
+          <!-- Photo 2 -->
+          <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+            <img src="IMG_4866.jpg" alt="Tournament photo" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300 cursor-pointer" onclick="openImageModal(this)">
+            <div class="p-3">
+              <p class="text-sm text-gray-600 text-center">Friends for Decades</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden" onclick="closeImageModal()">
+      <div class="max-w-4xl max-h-screen p-4">
+        <img id="modalImage" src="" alt="" class="max-w-full max-h-full object-contain">
+        <p class="text-white text-center mt-2">Click anywhere to close</p>
+      </div>
     </div>
 
     <!-- Future Results Notice -->
@@ -182,6 +236,30 @@
     </div>
 
   </main>
+
+  <script>
+    function openImageModal(img) {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      modal.classList.remove('hidden');
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeImageModal() {
+      const modal = document.getElementById('imageModal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeImageModal();
+      }
+    });
+  </script>
 
 </body>
 </html>
