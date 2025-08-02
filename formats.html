@@ -860,17 +860,27 @@
     @media print {
       /* Hide everything by default */
       body * {
-        visibility: hidden;
+        display: none !important;
       }
       
       /* Only show the selected format */
       .print-section, .print-section * {
-        visibility: visible;
+        display: block !important;
+      }
+      
+      /* Restore grid display for layout elements */
+      .print-section .grid {
+        display: grid !important;
+      }
+      
+      /* Restore flex display for flex elements */
+      .print-section .flex {
+        display: flex !important;
       }
       
       /* Position the print section at the top */
       .print-section {
-        position: absolute;
+        position: absolute !important;
         left: 0;
         top: 0;
         width: 100%;
@@ -889,7 +899,6 @@
       }
       
       .print-section .grid {
-        display: grid;
         gap: 12px;
         margin-bottom: 16px;
       }
