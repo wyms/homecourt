@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
     "allow": [
       "Bash(git add:*)",
@@ -13,9 +14,11 @@
       "Bash(gh repo edit:*)",
       "Bash(git pull:*)",
       "Bash(git stash:*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(python:*)",
+      "Bash(start index.html)",
+      "Bash(start payouts.html)"
     ],
     "deny": []
-  },
-  "$schema": "https://json.schemastore.org/claude-code-settings.json"
+  }
 }
