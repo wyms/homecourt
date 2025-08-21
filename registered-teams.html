@@ -174,14 +174,16 @@
 
   <script>
     document.getElementById('randomizeBtn').addEventListener('click', function() {
+      console.log('Button clicked!'); // Debug log
       // Get all team containers
-      const teamsContainer = document.querySelector('.space-y-4');
+      const teamsContainer = document.querySelector('.space-y-3');
+      console.log('Teams container:', teamsContainer); // Debug log
       const teamDivs = Array.from(teamsContainer.children);
       
       // Extract team data
       const teams = teamDivs.map(div => {
         const nameElement = div.querySelector('.font-semibold');
-        const representingElement = div.querySelector('.text-sm.text-gray-600');
+        const representingElement = div.querySelector('.text-gray-600');
         const tagElement = div.querySelector('.inline-block');
         
         return {
