@@ -175,10 +175,22 @@
   <script>
     document.getElementById('randomizeBtn').addEventListener('click', function() {
       console.log('Button clicked!'); // Debug log
-      // Get all team containers
-      const teamsContainer = document.querySelector('.space-y-3');
-      console.log('Teams container:', teamsContainer); // Debug log
-      const teamDivs = Array.from(teamsContainer.children);
+      // Get only the actual team divs (not summary or other sections)
+      const teamDivs = Array.from(document.querySelectorAll('.space-y-3 > div.flex.flex-col'));
+      console.log('Found team divs:', teamDivs.length); // Debug log
+      
+      if (teamDivs.length === 0) {
+        alert('No teams found to randomize!');
+        return;
+      }
+      
+      // Remove any existing team numbers first
+      teamDivs.forEach(div => {
+        const existingNumber = div.querySelector('.team-number');
+        if (existingNumber) {
+          existingNumber.remove();
+        }
+      });
       
       // Extract team data
       const teams = teamDivs.map(div => {
